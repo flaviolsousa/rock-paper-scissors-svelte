@@ -8,7 +8,7 @@
 </svelte:head>
 
 <session>
-	<h1>Paper-Rock-Scissor</h1>
+	<h1>Paper Rock Scissor</h1>
 	<Game/>
 </session>
 

@@ -2,6 +2,10 @@
 
 A project to practice [Svelte](https://svelte.dev/)
 
+## Demo
+
+[Here](https://flaviolsousa.github.io/rock-paper-scissors-svelte)
+
 ## To run
 
 ```sh

@@ -15,7 +15,6 @@
 	 */
 	let current;
 
-
 	let points1 = 0;
 	let points2 = 2;
 
@@ -23,20 +22,21 @@
 	 * @param {number} id
 	 */
 	function selectOption(id) {
-		current = options.find(o => o.id == id);
+		current = options.find((o) => o.id == id);
 	}
 </script>
 
 <div class="container">
 	<div class="game">
-		<Score bind:points1 bind:points2/>
+		<Score bind:points1 bind:points2 />
 		<div class="commands">
 			{#each options as o (o.id)}
 				<div class="command">
-					<button 
-						class="background" 
-						class:selected={o.id == current?.id} 
-						on:click={() => selectOption(o.id)}>
+					<button
+						class="background"
+						class:selected={o.id == current?.id}
+						on:click={() => selectOption(o.id)}
+					>
 						<img src={o.src} alt={o.alt} />
 					</button>
 				</div>
@@ -101,7 +101,7 @@
 		border: 0.2rem solid var(--color-theme-1);
 		box-shadow: 0 0 0.5rem transparent;
 		border-color: transparent;
-		transition: all 0.3s ease-in-out;    
+		transition: all 0.5s ease-in-out;
 	}
 
 	.command > .background > img {
@@ -112,7 +112,5 @@
 	.background.selected {
 		border: 0.2rem solid var(--color-theme-1);
 		box-shadow: 0 0 0.5rem var(--color-theme-1);
-		border-color: var(--color-theme-1);
-    	
 	}
 </style>
