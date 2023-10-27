@@ -1,4 +1,5 @@
 <script>
+	// @ts-nocheck
 	export let points1 = 0;
 	export let points2 = 2;
 </script>
@@ -15,7 +16,7 @@
 	.score-container {
 		height: 6em;
 		width: 100%;
-        margin: 1rem 0;
+		margin: 1rem 0;
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -26,7 +27,7 @@
 		font-size: 3em;
 		display: flex;
 		font-weight: bold;
-        width: 100%;
+		width: 100%;
 	}
 	.score-label > span.point {
 		flex-basis: 100%;
