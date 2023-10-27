@@ -6,16 +6,17 @@
 		<meta name="viewport" content="width=device-width" />
 		<meta http-equiv="content-security-policy" content="">
 		<link href="./assets/immutable/assets/_layout.8a12fc08.css" rel="stylesheet">
-		<link href="./assets/immutable/assets/_page.fb1166f5.css" rel="stylesheet">
-		<link rel="modulepreload" href="./assets/immutable/entry/start.43c9df8a.js">
-		<link rel="modulepreload" href="./assets/immutable/chunks/index.0cbaa7c3.js">
-		<link rel="modulepreload" href="./assets/immutable/chunks/singletons.f670b8e5.js">
-		<link rel="modulepreload" href="./assets/immutable/entry/app.87ff79b2.js">
-		<link rel="modulepreload" href="./assets/immutable/entry/_layout.svelte.35bd169b.js">
-		<link rel="modulepreload" href="./assets/immutable/chunks/stores.c97807ec.js">
+		<link href="./assets/immutable/assets/_page.90be0769.css" rel="stylesheet">
+		<link rel="modulepreload" href="./assets/immutable/entry/start.17a67b3d.js">
+		<link rel="modulepreload" href="./assets/immutable/chunks/index.ec1fb346.js">
+		<link rel="modulepreload" href="./assets/immutable/chunks/singletons.16c27b29.js">
+		<link rel="modulepreload" href="./assets/immutable/chunks/index.3ee927fd.js">
+		<link rel="modulepreload" href="./assets/immutable/entry/app.4591caf5.js">
+		<link rel="modulepreload" href="./assets/immutable/entry/_layout.svelte.946a7326.js">
+		<link rel="modulepreload" href="./assets/immutable/chunks/stores.df2bc711.js">
 		<link rel="modulepreload" href="./assets/immutable/entry/_layout.js.984db11e.js">
 		<link rel="modulepreload" href="./assets/immutable/chunks/_layout.da46b06b.js">
-		<link rel="modulepreload" href="./assets/immutable/entry/_page.svelte.8d8ccf97.js"><title>Home</title><!-- HEAD_svelte-16xbyve_START --><meta name="description" content="First Svelte App"><!-- HEAD_svelte-16xbyve_END -->
+		<link rel="modulepreload" href="./assets/immutable/entry/_page.svelte.bcfb2df1.js"><title>Home</title><!-- HEAD_svelte-16xbyve_START --><meta name="description" content="First Svelte App"><!-- HEAD_svelte-16xbyve_END -->
 	</head>
 	<body data-sveltekit-preload-data="hover">
 		<div style="display: contents">
@@ -30,14 +31,21 @@
 	<main class="svelte-195cvbj">
 
 <session class="svelte-13gpdlv"><h1 class="svelte-13gpdlv">Paper Rock Scissor</h1>
-	<div class="container svelte-qfz7t0"><div class="game svelte-qfz7t0"><div class="score-container svelte-3baeln"><div class="score-label svelte-3baeln"><span class="point svelte-3baeln">0</span>
+	<div class="container svelte-rbp5iq"><div class="game svelte-rbp5iq"><div class="score-container svelte-1gkuru7"><div class="score-label svelte-1gkuru7"><span class="point svelte-1gkuru7">0</span>
 		<span class="separator">:</span>
-		<span class="point svelte-3baeln">2</span></div>
+		<span class="point svelte-1gkuru7">2</span></div>
 </div>
-		<div class="commands svelte-qfz7t0"><div class="command svelte-qfz7t0"><button class="background svelte-qfz7t0"><img src="/assets/immutable/assets/paper.ae421a78.svg" alt="Paper Button" class="svelte-qfz7t0"></button>
-				</div><div class="command svelte-qfz7t0"><button class="background svelte-qfz7t0"><img src="/assets/immutable/assets/rock.f6200a89.svg" alt="Rock Button" class="svelte-qfz7t0"></button>
-				</div><div class="command svelte-qfz7t0"><button class="background svelte-qfz7t0"><img src="/assets/immutable/assets/scissor.0f0f0a69.svg" alt="Scissor Button" class="svelte-qfz7t0"></button>
-				</div></div></div>
+		<div class="commands svelte-1017t49"><div class="command svelte-1017t49"><button class="background svelte-1017t49"><img src="/assets/immutable/assets/paper-1.ae421a78.svg" alt="Paper Button" class="svelte-1017t49"></button>
+		</div><div class="command svelte-1017t49"><button class="background svelte-1017t49"><img src="/assets/immutable/assets/rock-2.f6200a89.svg" alt="Rock Button" class="svelte-1017t49"></button>
+		</div><div class="command svelte-1017t49"><button class="background svelte-1017t49"><img src="/assets/immutable/assets/scissor-1.0f0f0a69.svg" alt="Scissor Button" class="svelte-1017t49"></button>
+		</div>
+</div>
+		<div class="versus svelte-x84746">
+		<div class="player p1 svelte-x84746  selected"><img src="/assets/immutable/assets/scissor-1.0f0f0a69.svg" alt="Scissor Button" class="svelte-x84746">
+		</div>
+		<div class="player p2 svelte-x84746  selected"><img src="/assets/immutable/assets/rock-2.f6200a89.svg" alt="Rock Button" class="svelte-x84746">
+		</div>
+</div></div>
 </div>
 </session></main>
 </div>
@@ -46,7 +54,7 @@
 			
 			<script>
 				{
-					__sveltekit_omqaet = {
+					__sveltekit_paapv8 = {
 						env: {},
 						base: new URL(".", location).pathname.slice(0, -1),
 						element: document.currentScript.parentElement
@@ -55,10 +63,10 @@
 					const data = [null,null];
 
 					Promise.all([
-						import("./assets/immutable/entry/start.43c9df8a.js"),
-						import("./assets/immutable/entry/app.87ff79b2.js")
+						import("./assets/immutable/entry/start.17a67b3d.js"),
+						import("./assets/immutable/entry/app.4591caf5.js")
 					]).then(([kit, app]) => {
-						kit.start(app, __sveltekit_omqaet.element, {
+						kit.start(app, __sveltekit_paapv8.element, {
 							node_ids: [0, 2],
 							data,
 							form: null,
