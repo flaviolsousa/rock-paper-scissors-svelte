@@ -1,13 +1,12 @@
 <script>
 	// @ts-nocheck
-	import { options } from './options';
-	import { selected1 } from './store';
+	import { options, STATE_SELECTING, STATE_SCORING } from './enums';
+	import { selected1, state } from './store';
 
-	let current;
-
-	function selectOption(id) {
-		current = options.find((o) => o.id == id);
-		selected1.set(current);
+	function handleClickOption(o) {
+		if ($state == STATE_SELECTING) {
+			selected1.set(o);
+		}
 	}
 </script>
 
@@ -16,8 +15,9 @@
 		<div class="command">
 			<button
 				class="background"
-				class:selected={o.id == current?.id}
-				on:click={() => selectOption(o.id)}
+				class:selected={o.id == $selected1?.id}
+				class:scoring={$state == STATE_SCORING}
+				on:click={() => handleClickOption(o)}
 			>
 				<img src={o.src} alt={o.alt} />
 			</button>
@@ -72,5 +72,8 @@
 	.background.selected {
 		border: 0.2rem solid var(--color-theme-1);
 		box-shadow: 0 0 0.5rem var(--color-theme-1);
+	}
+	.background.selected.scoring {
+		background-color: var(--color-bg-1);
 	}
 </style>

@@ -1,14 +1,14 @@
 <script>
 	// @ts-nocheck
-	export let points1 = 0;
-	export let points2 = 2;
+
+	import { points1, points2 } from './store';
 </script>
 
 <div class="score-container">
 	<div class="score-label">
-		<span class="point">{points1}</span>
+		<span class="point">{$points1}</span>
 		<span class="separator">:</span>
-		<span class="point">{points2}</span>
+		<span class="point">{$points2}</span>
 	</div>
 </div>
 

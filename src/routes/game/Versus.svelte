@@ -1,7 +1,7 @@
 <script>
 	// @ts-nocheck
-	import { options } from './options';
-	import { selected1 } from './store';
+	import { options } from './enums';
+	import { selected1, selected2 } from './store';
 
 	let players = [
 		{ id: 1, selected: null },
@@ -10,7 +10,10 @@
 
 	selected1.subscribe((value) => {
 		players[0].selected = value;
-		players[1].selected = options[Math.floor(Math.random() * options.length)];
+		players = players;
+	});
+	selected2.subscribe((value) => {
+		players[1].selected = value;
 		players = players;
 	});
 </script>
